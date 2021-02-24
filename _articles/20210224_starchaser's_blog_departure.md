@@ -3,7 +3,7 @@ id: 0
 title: "🛫Starchaser's Blog 이륙합니다"
 subtitle: "Handmade-Blog를 이용해 Github Pages 세팅하기"
 date: "2021.02.24"
-tags:
+tags: "블로그"
 ---
 
 개발자를 희망하는, 컴퓨터공학과 학생으로서 쌓여가는 지식과 스쳐가는 아이디어를 기록하기 위해 블로그를 만들었습니다. 노션 블로그 https://starchaser.cf 는 개인적인 메모 창고와 서재의 기능을 하고, github pages에는 개발 경험과 아이디어를 끄적일 예정입니다.

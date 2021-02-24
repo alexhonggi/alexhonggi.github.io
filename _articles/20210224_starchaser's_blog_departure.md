@@ -1,6 +1,6 @@
 ---
 id: 0
-title: "🛫Starchaser's Blog 이륙합니다"
+title: "🛫 Starchaser의 Blog 이륙합니다"
 subtitle: "Handmade-Blog를 이용해 Github Pages 세팅하기"
 date: "2021.02.24"
 tags: "블로그"

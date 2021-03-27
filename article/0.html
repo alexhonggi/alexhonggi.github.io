@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title> 🛫 Starchaser의 Blog 이륙합니다 </title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="shortcut icon" href="/favicon.a35c33cf.ico" type="image/x-icon"><link rel="stylesheet" href="/init.366dd74d.css"><link rel="stylesheet" href="/article.df3435a8.css"></head><body> <header id="top-container" role="navigation"> </header> <main id="main-container"> <article id="article-container"> <h1 id="article-title"> 🛫 Starchaser의 Blog 이륙합니다 </h1> <h2 id="article-subtitle"> Handmade-Blog를 이용해 Github Pages 세팅하기 </h2> <time id="article-date"> 2021.02.24 </time> <section id="article-content-container"> <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul><li><a href="#%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%8A%A4%EB%9F%BD%EA%B2%8C%2C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%A5%99%ED%95%98%EA%B8%B0">개발자스럽게, 블로그 이륙하기</a><ul><li><a href="#%EC%9D%B4%EB%A5%99-%EA%B3%BC%EC%A0%95">이륙 과정</a></li><li><a href="#%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%80%EA%BE%B8%EA%B8%B0">블로그 가꾸기</a></li></ul></li></ul></div></p>
+</details>
+<p>개발자를 희망하는, 컴퓨터공학과 학생으로서 쌓여가는 지식과 스쳐가는 아이디어를 기록하기 위해 블로그를 만들었습니다. 노션 블로그 <a href="https://starchaser.cf">https://starchaser.cf</a> 는 개인적인 메모 창고와 서재의 기능을 하고, github pages에는 개발 경험과 아이디어를 끄적일 예정입니다.</p>
+<h2 id="%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%8A%A4%EB%9F%BD%EA%B2%8C%2C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%A5%99%ED%95%98%EA%B8%B0">개발자스럽게, 블로그 이륙하기</h2>
+<p>평소에 개발자들의 블로그, 특히 평범함을 벗어나 자신만의 길을 닦아가는 사람들의 기록을 염탐하는 것을 좋아합니다. 특히 <a href="https://parksb.github.io">박성범 님의 블로그</a>를 자주 정찰하는데, 특유의 깔끔함과 톡톡 튀는 글 내용이 마음에 들었습니다.</p>
+<p>최근 군대를 제대하고, 복학해서 들을 <a href="http://csapp.cs.cmu.edu/3e/home.html">시스템 프로그래밍</a> 수업을 준비하면서 컴퓨터에 대한 기본 이해를 요구받기 시작했습니다. 더불어 전산학부 학부생으로 살아가기 위해 기본적인 도구를 갖추고자 <a href="https://missing.csail.mit.edu/">MIT의 Missing Semester</a>를 공부하면서, 익히고 연습한 기억을 기록해야 할 필요성을 느꼈습니다.</p>
+<p>고로 저만의 공간을 하나 마련하기로 했습니다. 깃과 텍스트 에디터 사용을 연습할 겸 Github Pages를 열기로 했고, 마침 박성범님이 <a href="https://github.com/parksb/handmade-blog">Handmade Blog</a>를 공개해 주셨기에 이 템플릿을 사용하기로 했습니다.</p>
+<h3 id="%EC%9D%B4%EB%A5%99-%EA%B3%BC%EC%A0%95">이륙 과정</h3>
+<p>저도 개발자의 세계를 이제 막 엿보기 시작했기에, npm과 git을 이용한 블로그 생성에는 애를 먹었습니다. 혹시 되돌아볼 일이 있을지도 모르기에, 이륙 과정을 기록해 놓기로 했습니다.
+모든 내용은 <a href="https://github.com/parksb/handmade-blog">https://github.com/parksb/handmade-blog</a> 를 참고하여 작성했습니다.</p>
+<p>먼저 <a href="https://github.com">https://github.com</a> 에 본인의 계정으로 로그인합니다.
+<a href="https://github.com/parksb/handmade-blog">handmade-blog repository</a>로 가서, repository를 fork합니다. 이 과정에서, 모든 구성물을 가져오기 위해 <code>include all branches</code>를 체크합니다.</p>
+<p>Fork를 완료했으면, 본인 repository의 settings 탭에 들어가 GitHub Pages의 source branch를 <code>gh-pages</code>로 설정합니다. 이를 완료하면 <code>https://{YOUR_ID}.github.io</code>를 통해 자신의 블로그로 접속할 수 있게 됩니다.</p>
+<p>이후 repository를 clone하고, node packages를 깔아 생성된 주소에 내용을 입력합니다.</p>
+<pre class="hljs"><code>$ <span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">clone</span> <span class="hljs-selector-tag">https</span>://<span class="hljs-selector-tag">github</span><span class="hljs-selector-class">.com</span>/{YOUR_ID}/{REPOSITORY_NAME}<span class="hljs-selector-class">.git</span> # <span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">clone</span> <span class="hljs-selector-tag">https</span>://<span class="hljs-selector-tag">github</span><span class="hljs-selector-class">.com</span>/<span class="hljs-selector-tag">alexhonggi</span>/<span class="hljs-selector-tag">alexhonggi</span><span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span><span class="hljs-selector-class">.git</span>
+$ <span class="hljs-selector-tag">cd</span> {REPOSTORY_NAME} # <span class="hljs-selector-tag">cd</span> <span class="hljs-selector-tag">alexhonggi</span><span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span>
+$ <span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span>
+</code></pre>
+<p>main page의 내용은 <code>services</code> 디렉토리의 <code>config.json</code> 파일을 수정하여 바꿀 수 있습니다.</p>
+<pre class="hljs"><code>{
+  &quot;blogTitle&quot;: &quot;Starchaser&quot;,
+  &quot;blogSubtitle&quot;: &quot;Honggi Lee&quot;
+  &quot;article&quot;: {
+    &quot;tableOfContents&quot;: true
+  }
+}
+</code></pre>
+<p>파일을 수정한 뒤에는, <code>npm start</code> 스크립트를 실행해 로컬 서버를 열어 수정된 사항을 확인합니다. 로컬 서버는 <code>http://localhost:1234/</code>에 오픈됩니다.</p>
+<pre class="hljs"><code>$ <span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">start</span>
+</code></pre>
+<p>로컬 서버를 열고 반영하고 싶은 요소들이 모두 반영됨을 확인했다면, 모든 변경사항을 원격 저장소에 커밋하고 푸시합니다.</p>
+<pre class="hljs"><code>$ <span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">add</span> ./<span class="hljs-selector-tag">services</span>/<span class="hljs-selector-tag">config</span><span class="hljs-selector-class">.json</span>
+$ <span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">commit</span> <span class="hljs-selector-tag">-m</span> &quot;<span class="hljs-selector-tag">Set</span> <span class="hljs-selector-tag">the</span> <span class="hljs-selector-tag">blog</span> <span class="hljs-selector-tag">title</span> <span class="hljs-selector-tag">and</span> <span class="hljs-selector-tag">subtitle</span>&quot;
+$ <span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">push</span> <span class="hljs-selector-tag">origin</span> <span class="hljs-selector-tag">master</span>
+</code></pre>
+<p>깃과 깃헙을 통해 원격 저장소에 로컬 저장소의 변경점을 동기화했다면, <code>deploy</code> 스크립트를 사용해 웹사이트를 호스트할 준비가 되었습니다. <code>npm run deploy</code>를 통해 로컬 파일에 <code>dist</code> 디렉토리를 만들고, <code>gh-pages</code> 브랜치에 이를 푸시해줍니다. GitHub Pages는 <code>gh-pages</code>를 자동적으로 참고해 당신의 웹사이트를 <code>https://{YOUR_ID}.github.io</code>에 호스트 해줄 것입니다.</p>
+<pre class="hljs"><code>$ <span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">run</span> <span class="hljs-selector-tag">deploy</span>
+</code></pre>
+<h3 id="%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%80%EA%BE%B8%EA%B8%B0">블로그 가꾸기</h3>
+<p>위의 과정을 통해 무사히 당신의 GitHub Pages를 이륙시키는 것에 성공했다면, 이제는 글을 작성해 내부를 가꿀 수 있습니다. 글을 작성하고 게시하는 법은 <code>config.json</code>을 수정해 블로그를 이륙시키는 과정과 비슷합니다.</p>
+<ol>
+<li><code>_articles</code> 또는 <code>_works</code> 디렉토리에 글을 작성합니다.</li>
+<li><code>npm run publish article</code> 또는 <code>npm run publish work</code>을 통해 마크다운으로 작성된 컨텐츠를 HTML로 변환합니다.</li>
+<li><code>npm start</code> 스크립트를 통해 변경된 사항이 반영되었는지 확인합니다.</li>
+<li>반영하고 싶은 변경점을 커밋하고 푸시한 뒤, <code>npm run deploy</code>를 통해 적용합니다.</li>
+</ol>
+<p>글을 블로그에 반영하는 데에는 위의 과정이면 충분하지만, <a href="https://whatismarkdown.com/">마크다운 활용</a>이 익숙하지 않은 사람들에게는 텍스트 에디터를 사용해 블로그 글을 작성한다는 것은 고역일 것입니다. 그동안 WYSIWYG에만 익숙해 왔던 제게도 마크다운 글 작성법에 대해 익숙해져야 할 필요성이 있었습니다. 고심 끝에 일상에서 빠르게 컨텐츠를 수집하고 기억에 남기 쉽게 기록해야 하는 일은 <a href="https://starchaser.cf">노션 블로그</a>에 작성하기로 했고, 개발 관련 공부의 성과와 아이디어 기록에는 <a href="https://alexhonggi.github.io">GitHub Pages</a>를 사용하기로 했습니다.</p>
+<p>먼저 프로젝트의 구조를 이해할 필요가 있습니다.
+본인의 로컬 저장소 (저의 경우에는 <code>/Users/starchaser/alexhonggi.github.io</code>)에서 아래의 내용을 확인할 수 있습니다.</p>
+<ul>
+<li><code>_articles</code>: 블로그 포스트 파일 모음</li>
+<li><code>_works</code>: 포트폴리오 모음</li>
+<li><code>app</code>
+<ul>
+<li><code>assets</code>: 이미지, 글꼴 등과 같이 HTML 파일로 가져올 파일입니다.</li>
+<li><code>public</code>: <code>publish</code> 스크립트에서 생성된 HTML 파일입니다. <code>server</code>와 <code>dist</code> 디렉토리는 이 디렉토리를 기반으로 합니다. 이 디렉토리 아래의 파일들은 직접 변경할 일이 없습니다.
+<ul>
+<li><code>article</code>: <code>_articles</code> 디렉토리에서 전환된 HTML 파일입니다.</li>
+<li><code>work</code>: <code>_works</code> 디렉토리에서 전환된 HTML 파일입니다.</li>
+</ul>
+</li>
+<li><code>src</code>: HTML 파일에서 가져올 소스 코드입니다.
+<ul>
+<li><code>css</code>: <code>build</code> 스크립트에서 생성된 css 파일입니다.</li>
+<li><code>scss</code></li>
+<li><code>ts</code></li>
+</ul>
+</li>
+<li><code>staic</code>: <code>robot.txt</code>, <code>sitemap.xml</code>등과 같이 <code>build</code> 스크립트로 컴파일되지 않은 정적 파일입니다. <code>build</code> 스크립트는 이 디렉토리 아래의 모든 파일을 <code>dist</code> 디렉토리에 복사합니다.</li>
+<li><code>templates</code>: EJS 템플릿 파일입니다. <code>publish</code> 스크립트는 이 디렉토리 아래의 템플릿을 HTML 파일로 변환합니다.</li>
+</ul>
+</li>
+<li><code>dist</code>: <code>build</code> 스크립트로 컴파일된 파일입니다. <code>deploy</code> 스크립트는 이 디렉토리를 기반으로 GitHub Pages에 웹 사이트를 배포합니다. 이 디렉토리 아래의 파일은 변경할 일이 없습니다.</li>
+<li><code>server</code>: <code>build</code> 스크립트로 컴파일된 파일입니다. <code>start</code> 스크립트는 로컬 서버를 엽니다. 디렉토리 아래의 파일은 변경할 일이 없습니다.</li>
+<li><code>services</code>: <code>publish</code> 스크립트를 구현하는 소스 코드입니다.
+<ul>
+<li><code>classes</code></li>
+<li><code>models</code></li>
+</ul>
+</li>
+<li><code>tools</code>: 다양한 npm 스크립트를 구현하는 소스 코드입니다.</li>
+</ul>
+<p>다음은 직접 작성시 참고할 마크다운 문법입니다.</p>
+<p><code>구절 강조</code>: backtick 두개로 강조할 구절을 감쌉니다.
+<a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC">하이퍼링크</a>: 하이퍼링크를 삽입하고 싶은 부분을 대괄호로 감싸고, 뒤이어 괄호로 감싼 링크를 입력합니다.
+인용<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>: 인용하고 싶은 구절 뒤에 대괄호로 감싼, 캐럿과 이어진 숫자로 표시한다.
+강조 표시: 강조하고 싶은 부분은 css를 적용하여 표시한다. backtick 세 개를 이용해 css를 감싼다.
+제목, 부제목: # 을 삽입하여 글씨의 크기를 조정한다.
+이미지 삽입: 하이퍼링크와 동일하나 앞에 느낌표를 붙인다. 대괄호 안에는 캡션을 넣는다.</p>
+<p>여기까지가 기본적인 글 작성 방법입니다. 이제 블로그를 채워나갈 일만 남았습니다. 어떤 글들로 채워 나갈지 고민해보아야겠습니다.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>인용 연습 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section> </section> <section id="article-navigation"> <div class="article-navigation-item article-navigation-next"> <a href="/article/2.html"> <div class="article-navigation-arrow article-navigation-next">＜</div> <div class="article-navigation-content article-navigation-next"> <p class="article-navigation-title">Lab 1: Linked List Lab</p> <p class="article-navigation-subtitle">C로 Doubly Linked List 구현하기</p> </div> </a> </div> </section> <section id="article-list-button-container"> <a href="/articles.html"> <div id="article-list-button">📚</div> </a> </section> </article> </main> <script defer src="/init.ddb7c0df.js"></script>
+</body></html>

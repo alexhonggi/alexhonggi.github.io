@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title> 왜 String은 대문자로 시작하고 int는 소문자로 시작할까? </title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="shortcut icon" href="/favicon.a35c33cf.ico" type="image/x-icon"><link rel="stylesheet" href="/init.366dd74d.css"><link rel="stylesheet" href="/article.df3435a8.css"></head><body> <header id="top-container" role="navigation"> </header> <main id="main-container"> <article id="article-container"> <h1 id="article-title"> 왜 String은 대문자로 시작하고 int는 소문자로 시작할까? </h1> <h2 id="article-subtitle"> Primitive type vs. Reference type </h2> <time id="article-date"> 2021.03.27 </time> <section id="article-content-container"> <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul></ul></div></p>
+</details>
+<p><a href="https://stackoverflow.com/questions/4006302/why-is-java-string-type-written-in-capital-letter-while-int-is-not">Why is Java “String” type written in capital letter while “int” is not?</a>에 대한 stackoverflow의 답변입니다.</p>
+<p>I am curious. Why do I have to type String myStr with a capital letter whereas I type int aNumba with a lower-case letter?</p>
+<p>Because int is a primitive type, not a class, thus it is not directly comparable to String. The corresponding class type is Integer, spelled according to the class naming conventions.</p>
+<p>Similar pairs of primitive and class types are</p>
+<p>byte vs Byte
+short vs Short
+long vs Long
+float vs Float
+double vs Double
+boolean vs Boolean
+char vs Character</p>
+<p>String itself is a class derived from Object, while int is a primitive.</p>
+<p>Your confusion probably comes from the fact that String behaves in many ways like a primitive, in such that it has basic operations that can be applied to it, like the (+) concatenation, and that it does not need to be imported.</p>
+<p>The concatenation is because it is fundamental enough to have this added operation applied, even though it is an object type.</p>
+<p>The reason it does not need to be imported, is by default the java.lang package is imported, of which String is member.</p> </section> <section id="article-navigation"> <div class="article-navigation-item article-navigation-prev"> <a href="/article/1.html"> <div class="article-navigation-arrow article-navigation-prev">＞</div> <div class="article-navigation-content article-navigation-prev"> <p class="article-navigation-title">Lorem ipsum 1</p> <p class="article-navigation-subtitle">Sed sit amet arcu a diam tincidunt porta</p> </div> </a> </div> </section> <section id="article-list-button-container"> <a href="/articles.html"> <div id="article-list-button">📚</div> </a> </section> </article> </main> <script defer src="/init.ddb7c0df.js"></script>
+</body></html>
